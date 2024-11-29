@@ -30,9 +30,9 @@ void loop() {
     
     for (int t=0; t<256; t++) {      // fill the samples array 
 
-      samples[2*t] = sin(t*0.2);               // real part of a sinus
-      // samples[2*t] = (t%32 < 16 ?  1: -1);    // real part square wave signal
-      // samples[2*t] = (t%32)/16.0 -1;          // real part ..... signal
+//      samples[2*t] = sin(t*0.2);               // real part of a sinus
+//       samples[2*t] = (t%32 < 16 ?  1: -1);    // real part square wave signal
+       samples[2*t] = (t%32)/16.0 -1;          // real part ..... signal
 
       samples[2*t+1] = 0.0;          // imaginary part is zerro
       timeDomain[t] = samples[2*t];

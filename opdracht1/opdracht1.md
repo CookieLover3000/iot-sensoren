@@ -64,4 +64,45 @@ Ik zie een piek aan de linkerkant van de grafiek.
 
     De piek ligt bij de “f”-waarde 8
 
-12. Gegeven is dat de sampling frequentie 9000Hz was. Wat is dan de frequentie van de gemeten signaal? (beargumenteer je antwoord volledig)
+12. Gegeven is dat de sampling frequentie 9000Hz was. Wat is dan de frequentie van het gemeten signaal? (beargumenteer je antwoord volledig)
+
+    Het signaal in de afbeelding is 256 keer gesampled. De frequentie-bin is 8, dus $1/(256/9000/8) = 281,25$ Hz
+
+13. Kopieer de plaatjes van het tijdsdomein en frequentiedomein in je practicum-verslag en geef een verklaring. Bij welke “f”-waarden in het frequentiedomein liggen de pieken?
+
+    ![alt text](image-3.png)
+
+    ![alt text](image-4.png)
+
+    De pieken liggen op de "f"-waarden: `8`, `24`, `40`, `56`, `72`, `88`, `104` en `120`
+
+    De reden dat de pieken hier liggen is omdat het signaal een blokgolf signaal is.
+
+14. Stel dat de sampling frequentie 20kHz was. Wat was dan de basisfrequentie (grondtoon)? En beargumenteer je antwoord.
+
+    sampletijd = $1 / 20$ KHz $ = 0.00005 $ s
+
+    periode = $32$ samples
+
+    periodetijd = $0.0016$
+
+    Dus de grondtoon is $ 1/0,0016 = 625$
+
+15. Kopieer de plaatjes van het tijdsdomein en frequentiedomein in je practicum-verslag. Als het signaal van vraag 10 een blokgolf heet, hoe zou je dit signaal noemen?
+
+    ![alt text](image-5.png)
+    ![alt text](image-6.png)
+
+    Dit is een sawtooth wave signaal
+
+16. Kopieer het plaatje in je practicum-verslag en geef een verklaring.
+
+    ![alt text](image-7.png)
+
+    Voor het blokkerig maken van een sinus signaal zijn er hoge frequenties nodig. Omdat de code hier is aangepast en er dus een laagdoorlaatfilter van is gemaakt zijn deze hogere frequenties er niet meer en wordt het signaal dus minder blokkerig.
+
+17. Bij welke waarde komt er in het tijdsdomein een redelijke blokgolf uit.
+
+    Bij een waarde van `128` komt er een redelijke blokgolf uit.
+
+    ![alt text](image-8.png) 
